@@ -122,6 +122,60 @@ ConsoleFighting/fast:
 	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/build
 .PHONY : ConsoleFighting/fast
 
+src/Actor.o: src/Actor.cpp.o
+
+.PHONY : src/Actor.o
+
+# target to build an object file
+src/Actor.cpp.o:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o
+.PHONY : src/Actor.cpp.o
+
+src/Actor.i: src/Actor.cpp.i
+
+.PHONY : src/Actor.i
+
+# target to preprocess a source file
+src/Actor.cpp.i:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.i
+.PHONY : src/Actor.cpp.i
+
+src/Actor.s: src/Actor.cpp.s
+
+.PHONY : src/Actor.s
+
+# target to generate assembly for a file
+src/Actor.cpp.s:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.s
+.PHONY : src/Actor.cpp.s
+
+src/Engine.o: src/Engine.cpp.o
+
+.PHONY : src/Engine.o
+
+# target to build an object file
+src/Engine.cpp.o:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o
+.PHONY : src/Engine.cpp.o
+
+src/Engine.i: src/Engine.cpp.i
+
+.PHONY : src/Engine.i
+
+# target to preprocess a source file
+src/Engine.cpp.i:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
+
+src/Engine.s: src/Engine.cpp.s
+
+.PHONY : src/Engine.s
+
+# target to generate assembly for a file
+src/Engine.cpp.s:
+	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
+
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -185,6 +239,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ConsoleFighting"
+	@echo "... src/Actor.o"
+	@echo "... src/Actor.i"
+	@echo "... src/Actor.s"
+	@echo "... src/Engine.o"
+	@echo "... src/Engine.i"
+	@echo "... src/Engine.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

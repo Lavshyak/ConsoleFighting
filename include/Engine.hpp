@@ -22,7 +22,7 @@ class Engine
 	static int Attack();
 	
 	private:
-	static Actor &User, *Users[], *Enemy;
+	static Actor &User, *Users, *Enemy;
 };
 
 #endif //ENGINE_H

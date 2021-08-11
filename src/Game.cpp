@@ -8,8 +8,9 @@
 Game::Game()
 {
 	cout<<"game started"<<endl;
-	//MainMenu();
-	
+	MainMenu();
+	//Engine::Users_Select();
+	Engine::ClearConsole();
 }
 
 void Game::MainMenu()

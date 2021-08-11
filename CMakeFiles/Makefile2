@@ -73,12 +73,12 @@ clean: CMakeFiles/ConsoleFighting.dir/clean
 CMakeFiles/ConsoleFighting.dir/all:
 	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/depend
 	$(MAKE) -f CMakeFiles/ConsoleFighting.dir/build.make CMakeFiles/ConsoleFighting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=1,2,3 "Built target ConsoleFighting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=1,2,3,4,5 "Built target ConsoleFighting"
 .PHONY : CMakeFiles/ConsoleFighting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ConsoleFighting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ConsoleFighting.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles 0
 .PHONY : CMakeFiles/ConsoleFighting.dir/rule

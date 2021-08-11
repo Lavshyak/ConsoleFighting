@@ -56,9 +56,35 @@ include CMakeFiles/ConsoleFighting.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ConsoleFighting.dir/flags.make
 
+CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o: CMakeFiles/ConsoleFighting.dir/flags.make
+CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o: src/Actor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp
+
+CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp > CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.i
+
+CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp -o CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.s
+
+CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o: CMakeFiles/ConsoleFighting.dir/flags.make
+CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o: src/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp
+
+CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.i"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp > CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.i
+
+CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.s"
+	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp -o CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.s
+
 CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o: CMakeFiles/ConsoleFighting.dir/flags.make
 CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o: src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o"
 	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp
 
 CMakeFiles/ConsoleFighting.dir/src/Game.cpp.i: cmake_force
@@ -71,7 +97,7 @@ CMakeFiles/ConsoleFighting.dir/src/Game.cpp.s: cmake_force
 
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: CMakeFiles/ConsoleFighting.dir/flags.make
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ConsoleFighting.dir/src/main.cpp.o"
 	/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ConsoleFighting.dir/src/main.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp
 
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.i: cmake_force
@@ -84,17 +110,21 @@ CMakeFiles/ConsoleFighting.dir/src/main.cpp.s: cmake_force
 
 # Object files for target ConsoleFighting
 ConsoleFighting_OBJECTS = \
+"CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o" \
+"CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o" \
 "CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o" \
 "CMakeFiles/ConsoleFighting.dir/src/main.cpp.o"
 
 # External object files for target ConsoleFighting
 ConsoleFighting_EXTERNAL_OBJECTS =
 
+ConsoleFighting: CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o
+ConsoleFighting: CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o
 ConsoleFighting: CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o
 ConsoleFighting: CMakeFiles/ConsoleFighting.dir/src/main.cpp.o
 ConsoleFighting: CMakeFiles/ConsoleFighting.dir/build.make
 ConsoleFighting: CMakeFiles/ConsoleFighting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ConsoleFighting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ConsoleFighting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ConsoleFighting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

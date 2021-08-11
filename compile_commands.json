@@ -1,6 +1,16 @@
 [
 {
   "directory": "/storage/BBFE-1AE6/termux/github/ConsoleFighting",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++   -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src  -Wall -std=c++14 -fallow-void-main   -o CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp",
+  "file": "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp"
+},
+{
+  "directory": "/storage/BBFE-1AE6/termux/github/ConsoleFighting",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++   -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src  -Wall -std=c++14 -fallow-void-main   -o CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp",
+  "file": "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp"
+},
+{
+  "directory": "/storage/BBFE-1AE6/termux/github/ConsoleFighting",
   "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++   -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src  -Wall -std=c++14 -fallow-void-main   -o CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp",
   "file": "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp"
 },

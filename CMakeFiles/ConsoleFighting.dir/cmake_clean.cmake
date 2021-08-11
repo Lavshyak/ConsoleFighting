@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o"
+  "CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o"
   "CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o"
   "CMakeFiles/ConsoleFighting.dir/src/main.cpp.o"
   "ConsoleFighting"

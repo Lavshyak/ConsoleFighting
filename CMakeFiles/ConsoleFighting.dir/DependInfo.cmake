@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.cpp" "/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/ConsoleFighting.dir/src/Actor.cpp.o"
+  "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp" "/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o"
   "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp" "/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o"
   "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp" "/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/ConsoleFighting.dir/src/main.cpp.o"
   )
