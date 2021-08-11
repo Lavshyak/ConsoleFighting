@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp
+Game.hpp
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.hpp
+Engine.hpp
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.hpp
+iostream
+-
+
+include/Actor.hpp
+
+include/Engine.hpp
+Actor.hpp
+include/Actor.hpp
+
+include/Game.hpp
+

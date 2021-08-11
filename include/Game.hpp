@@ -4,7 +4,7 @@
 */
 #ifndef GAME_H
 #define GAME_H  
-#include "Engine.hpp"
+
 class Game
 {
 	public:

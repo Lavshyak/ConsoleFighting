@@ -1,0 +1,1 @@
+/data/user/0/ru.iiec.cxxdroid/files/bin/clang++  -Wall -std=c++14 -fallow-void-main  -lm -ldl -llog -lz CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o CMakeFiles/ConsoleFighting.dir/src/main.cpp.o  -o ConsoleFighting 

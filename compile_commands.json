@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/storage/BBFE-1AE6/termux/github/ConsoleFighting",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++   -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src  -Wall -std=c++14 -fallow-void-main   -o CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp",
+  "file": "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp"
+},
+{
+  "directory": "/storage/BBFE-1AE6/termux/github/ConsoleFighting",
+  "command": "/data/user/0/ru.iiec.cxxdroid/files/bin/clang++   -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src  -Wall -std=c++14 -fallow-void-main   -o CMakeFiles/ConsoleFighting.dir/src/main.cpp.o -c /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp",
+  "file": "/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp"
+}
+]

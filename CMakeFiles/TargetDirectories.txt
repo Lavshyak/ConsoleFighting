@@ -1,0 +1,3 @@
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/rebuild_cache.dir
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/edit_cache.dir
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/CMakeFiles/ConsoleFighting.dir
