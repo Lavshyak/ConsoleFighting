@@ -16,6 +16,6 @@ class Game
 	void MainMenu(); //главное меню
 	void Fight(); //процесс боя
 	
-	Engine E;
+	Engine eng;
 };
 #endif //GAME_H

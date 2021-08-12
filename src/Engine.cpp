@@ -1,16 +1,10 @@
 #include "Engine.hpp"
 #include <iostream>
 #include "Actor.hpp"
-#include <string>
 
-#define cout std::cout
+#define cout std::cout 
 #define endl std::endl
 #define cin std::cin
-#define string std::string
-
-Engine::Engine()
-{
-}
 
 void Engine::ClearConsole()
 {
@@ -21,31 +15,43 @@ void Engine::ClearConsole()
 
 void Engine::DeleteActors()
 {
-	for (int i = 0; i < 3; i++)
-		delete Users[i];
-	delete Enemy;
+	for(int i=0;i<3;i++)
+	{
+		delete(Users[i]);
+	}
 	delete User;
+	delete Enemy;
 }
 
-void Engine::Users_Load()
+void Engine::Users_Save()
 {
+	for(int i=0;i<3;i++)
+	{
+		if(Users[i])
+		{
+			
+		}
+	}
 }
+
+
 
 int Engine::Users_Select()
 {
-	cout << "ВЫБОР ЮЗЕРА" << endl;
-	for (int i = 0; i < 3; i++)
+	cout<<"ВЫБОР ЮЗЕРА (ЦИФРА)"<<endl;
+	for(int i=0;i<3;i++)
 	{
-		cout << i << ": ";
-		if (Users[i])
-			cout << Users[i];
-		else
-			cout << "Empty";
-		cout << endl;
+		cout<<i<<": ";
+		if(Users[i])
+		{
+			cout<<Users[i]->GetName();
+		}
+		else cout<<"Empty";
+		cout<<endl;
 	}
-	string forCin;
-	cout << "ВВЕДИ ЦИФРУ БЛЯТЬ..." << endl
-		 << ">>";
-	cin >> forCin;
-	return std::stoi(forCin);
 }
+
+Engine::Engine()
+{
+	
+	}

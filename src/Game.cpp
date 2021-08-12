@@ -6,20 +6,20 @@
 
 Game::Game()
 {
-	cout<<"\"Игра, которая не прощает\" started"<<endl;
+	cout<<"game started"<<endl;
 	MainMenu();
-	E.Users_Load();
-	E.Users_Select();
-	
+	//eng.ClearConsole();
 }
 
 void Game::MainMenu()
 {
 	cout<<"------Main Menu-----"<<endl;
+	eng.Users_Select();
 }
 
 Game::~Game()
 {
-	//Engine::DeleteActors();
+	//eng.Users_Save();
+	eng.DeleteActors();
 	cout<<"game finished"<<endl;
 }
