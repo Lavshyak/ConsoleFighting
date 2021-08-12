@@ -1,5 +1,4 @@
 #include "Game.hpp"
-#include "Engine.hpp"
 #include <iostream>
 
 #define cout std::cout 
@@ -7,10 +6,11 @@
 
 Game::Game()
 {
-	cout<<"game started"<<endl;
+	cout<<"\"Игра, которая не прощает\" started"<<endl;
 	MainMenu();
-	//Engine::Users_Select();
-	Engine::ClearConsole();
+	E.Users_Load();
+	E.Users_Select();
+	
 }
 
 void Game::MainMenu()

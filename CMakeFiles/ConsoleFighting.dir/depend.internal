@@ -15,4 +15,6 @@ CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o
  include/Game.hpp
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o
  /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp
+ include/Actor.hpp
+ include/Engine.hpp
  include/Game.hpp

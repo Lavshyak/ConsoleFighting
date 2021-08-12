@@ -14,5 +14,7 @@ CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o: include/Engine.hpp
 CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o: include/Game.hpp
 
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: include/Actor.hpp
+CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: include/Engine.hpp
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o: include/Game.hpp
 

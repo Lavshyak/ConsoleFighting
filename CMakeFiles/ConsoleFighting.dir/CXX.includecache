@@ -11,6 +11,10 @@ Engine.hpp
 /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.hpp
 iostream
 -
+Actor.hpp
+/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Actor.hpp
+string
+-
 
 include/Actor.hpp
 

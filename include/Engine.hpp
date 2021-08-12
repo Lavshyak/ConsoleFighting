@@ -9,20 +9,23 @@
 class Engine
 {
 	public:
-	static void DeleteActors(); //удаляет Акторов из памяти (если они будут объявлены в этом файле). Вызывается через Game.
+	Engine();
+	void DeleteActors(); //удаляет Акторов из памяти (если они будут объявлены в этом файле). Вызывается через Game.
 	
-	static void ClearConsole(); //очищает консоль и пользовательский ввод
+	void ClearConsole(); //очищает консоль и пользовательский ввод
 	
-	static int Users_Select(); //будет 3 пользователя, тут юзер выбирает нужного
-	static void Users_Save(); //сохранить всех персонажей игрока (перед выходом)
-	static void Users_Load(); //загрузить их
+	int Users_Select(); //будет 3 пользователя, тут юзер выбирает нужного (User)
+	void Users_Save(); //сохранить всех персонажей игрока (перед выходом)
+	void Users_Load(); //загрузить их
 	
-	static void Create_Enemy(); //инициализирует врага, подходящего для текущего состояния юзерского персонажа
+	void Create_Enemy(); //инициализирует врага, подходящего для текущего состояния юзерского персонажа
 	
-	static int Attack();
+	int Attack(); //кто атакует и какой результат.
 	
 	private:
-	static Actor &User, *Users, *Enemy;
+	Actor *User, 
+	*Users[3];
+	Actor *Enemy;
 };
 
 #endif //ENGINE_H
