@@ -3,6 +3,7 @@
 
 #define cout std::cout 
 #define endl std::endl
+#define cin std::cin
 
 Game::Game()
 {
@@ -14,7 +15,12 @@ Game::Game()
 void Game::MainMenu()
 {
 	cout<<"------Main Menu-----"<<endl;
-	eng.Users_Select();
+	cout<<"0: Contunie"<<endl;
+	cout<<"1: New game"<<endl;
+	
+	int usercin;
+	cin>>usercin;
+	eng.Users_Select(usercin);
 }
 
 Game::~Game()

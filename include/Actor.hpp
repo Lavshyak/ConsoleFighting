@@ -7,7 +7,8 @@
 class Actor
 {
 	public:
-	Actor(std::string name);
+	Actor(std::string name, double health=100,
+double damage=10, double defence=0, int lvl=0, double lvlCurrent=0);
 	
 	std::string ToSave();
 	
@@ -19,7 +20,7 @@ class Actor
 	private:
 	void LvlUp(); 
 	
-	std::string m_Name;
+	std::string m_name;
 	double m_health, m_damage, m_defence;
 	int m_lvl; 
 	double m_lvlCurrent, //текущие очки опыта

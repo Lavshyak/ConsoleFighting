@@ -9,3 +9,4 @@ file(GLOB SRCS
 	"${PROJECT_SOURCE_DIR}/src/*"
 )
 add_executable(ConsoleFighting ${SRCS})
+

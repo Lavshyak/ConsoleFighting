@@ -16,18 +16,6 @@ Actor.hpp
 fstream
 -
 
-/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp
-Game.hpp
-/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.hpp
-iostream
--
-
-/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp
-iostream
--
-Game.hpp
-/storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.hpp
-
 include/Actor.hpp
 string
 -
@@ -35,8 +23,4 @@ string
 include/Engine.hpp
 Actor.hpp
 include/Actor.hpp
-
-include/Game.hpp
-Engine.hpp
-include/Engine.hpp
 
