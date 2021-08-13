@@ -19,7 +19,7 @@ void Game::MainMenu()
 
 Game::~Game()
 {
-	//eng.Users_Save();
+	eng.Users_Save();
 	eng.DeleteActors();
 	cout<<"game finished"<<endl;
 }

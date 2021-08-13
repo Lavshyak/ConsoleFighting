@@ -9,6 +9,8 @@ class Actor
 	public:
 	Actor(std::string name);
 	
+	std::string ToSave();
+	
 	std::string GetName();
 	
 	int Attack(Actor &kogo); //этот перс вызывает Defence() у того, кого атакует.

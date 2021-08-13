@@ -1,8 +1,8 @@
 #include "Engine.hpp"
 #include <iostream>
 #include "Actor.hpp"
-
-#define cout std::cout 
+#include <fstream>
+#define cout std::cout
 #define endl std::endl
 #define cin std::cin
 
@@ -15,9 +15,9 @@ void Engine::ClearConsole()
 
 void Engine::DeleteActors()
 {
-	for(int i=0;i<3;i++)
+	for (int i = 0; i < 3; i++)
 	{
-		delete(Users[i]);
+		delete Users[i];
 	}
 	delete User;
 	delete Enemy;
@@ -25,33 +25,35 @@ void Engine::DeleteActors()
 
 void Engine::Users_Save()
 {
-	for(int i=0;i<3;i++)
+	std::ofstream out;
+
+	for (int i = 0; i < 3; i++)
 	{
-		if(Users[i])
+		if (Users[i])
 		{
-			
+			out.open("/../users/user" + std::to_string(i) + ".txt");
+			if (out.is_open())
+			{
+				out << Users[i]->ToSave();
+			}
 		}
 	}
+	out.close();
 }
 
-
-
-int Engine::Users_Select()
+void Engine::Users_Select()
 {
-	cout<<"ВЫБОР ЮЗЕРА (ЦИФРА)"<<endl;
-	for(int i=0;i<3;i++)
+	cout << "Выбор пользователя" << endl;
+	for (int i = 0; i < 3; i++)
 	{
-		cout<<i<<": ";
-		if(Users[i])
+		cout << i << ": ";
+		if (Users[i])
 		{
-			cout<<Users[i]->GetName();
+			cout << Users[i]->GetName();
 		}
-		else cout<<"Empty";
-		cout<<endl;
+		else
+			cout << "Empty";
+		cout << endl;
 	}
+	User = Users[1];
 }
-
-Engine::Engine()
-{
-	
-	}
