@@ -8,8 +8,8 @@
 Game::Game()
 {
 	cout<<"game started"<<endl;
-	MainMenu();
-	//eng.ClearConsole();
+	eng.Users_Load();
+	eng.Users_Select(1);
 }
 
 void Game::MainMenu()
@@ -27,5 +27,5 @@ Game::~Game()
 {
 	eng.Users_Save();
 	eng.DeleteActors();
-	cout<<"game finished"<<endl;
+	cout<<endl<<"game finished"<<endl;
 }

@@ -23,9 +23,12 @@ class Engine
 	int Attack(); //кто атакует и какой результат.
 	
 	private:
-	Actor *User, 
+	Actor **User, 
 	*Users[3];
 	Actor *Enemy;
+	
+	void OtladFName(int n, std::string name);
+	
 };
 
 #endif //ENGINE_H
