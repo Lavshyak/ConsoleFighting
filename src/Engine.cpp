@@ -3,10 +3,10 @@
 #include "Actor.hpp"
 #include <fstream>
 
-#define cout std::cout
-#define endl std::endl
-#define cin std::cin
-#define string std::string
+using std::cout;
+using std::endl;
+using std::cin;
+using std::string;
 
 void Engine::ClearConsole()
 {
@@ -21,16 +21,17 @@ void Engine::DeleteActors()
 	for (int i = 0; i < 3; i++)
 	{
 		delete Users[i];
-		cout<<"вычещен юзер, "<<i<<endl;
+		cout<<"вычещен юзер: "<<i<<endl;
 	}
 	User=nullptr;
 	delete Enemy;
 	cout<<"вычещен enemy"<<endl;
+	OtladFName(1,"DeleteActors");
 }
 
 void Engine::Users_Save()
 {
-	
+	OtladFName(0,"Users_Save");
 	std::ofstream out;
 
 	for (int i = 0; i < 3; i++)
@@ -42,12 +43,12 @@ void Engine::Users_Save()
 			if (out.is_open())
 			{
 				out << Users[i]->ToSave();
-				cout<<"юзер сохранен,"<<i<<endl;
+				cout<<"сохранен юзер: "<<i<<endl;
 			}
 			out.close();
 		}	
 	}
-	OtladFName(1,"DeleteActors");
+	OtladFName(1,"Users_Save");
 }
 
 void Engine::Users_Load()
@@ -98,18 +99,16 @@ void Engine::Users_Select(int norl)
 
 	cout << "введи ЦИФРУ" << endl
 		 << ">>";
-	int usercin;
-	cin >> usercin;
-	if (usercin<2 | usercin> - 1)
-	{
-		User = &Users[usercin]; //User
-	}
-	else
-	{
-		ClearConsole();
-		cout << usercin << " - неверно";
-		Users_Select(norl);
-	}
+		 CinValid(0,2);
+		 if(userInt==tl::nullopt)
+		 {
+		 	ClearConsole();
+		 	Users_Select(norl);
+		 }
+		 else
+		 {
+		 	User = &Users[userInt.value()]; //User
+		 }
 
 	if (norl == 0) //на загрузку
 	{
@@ -132,20 +131,52 @@ void Engine::Users_Select(int norl)
 void Engine::Create_User()
 {
 	OtladFName(0,"Create_User");
-	cout << "Имя нового персонажа: ";
+	cout <<"Цифра 0 для отмены"<<endl<< "Имя нового персонажа: ";
 	string name;
 	cin >> name;
+	if(name!="0")
+	{
 	*User = new Actor(name);
 	cout<<(*User)->GetName()
 	<<" создан"<<endl;
+	}
 	OtladFName(1,"Create_User");
 	
 }
 
-void OtladFName(int n, string name)
+void Engine::OtladFName(int n, string name)
 {
 	if(n==0)
-	cout<<"-------------"<<name<<"-------------"<<endl;
+	cout<<"______________________________"<<name<<"{"<<endl;
 	if(n==1)
-	cout<<"~~~~~"<<name<<"~~~~~~"<<endl;
+	cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<name<<"}"<<endl;
+}
+
+int Engine:: CinValid(string userCin, int l, int r)
+{
+	int ret;
+	try{
+		ret = std::stoi(userCin);
+	}
+	catch(std::invalid_argument e)
+	{
+		return -1;
+	}
+	if(ret<l | ret>r) return -1;
+	return ret;
+}
+
+void Engine::CinValid(int l, int r)
+{
+	cin>>userStr;
+	try
+	{
+		userInt=std::stoi(userStr);
+	}
+	catch(std::invalid_argument e)
+	{
+		userInt=tl::nullopt;
+		return;
+	}
+	if(userInt<l | userInt>r) userInt=tl::nullopt;
 }

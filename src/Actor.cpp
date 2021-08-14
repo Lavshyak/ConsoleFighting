@@ -1,7 +1,7 @@
 #include "Actor.hpp"
 #include <sstream>
 
-#define endl std::endl;
+using std::endl;
 
 Actor::Actor(std::string name, double health,
 double damage, double defence, int lvl, double lvlCurrent)

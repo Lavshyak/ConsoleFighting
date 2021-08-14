@@ -8,13 +8,16 @@ CMakeFiles/ConsoleFighting.dir/src/Engine.cpp.o
  /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Engine.cpp
  include/Actor.hpp
  include/Engine.hpp
+ vendor/optional.hpp
 CMakeFiles/ConsoleFighting.dir/src/Game.cpp.o
  /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/Game.cpp
  include/Actor.hpp
  include/Engine.hpp
  include/Game.hpp
+ vendor/optional.hpp
 CMakeFiles/ConsoleFighting.dir/src/main.cpp.o
  /storage/BBFE-1AE6/termux/github/ConsoleFighting/src/main.cpp
  include/Actor.hpp
  include/Engine.hpp
  include/Game.hpp
+ vendor/optional.hpp

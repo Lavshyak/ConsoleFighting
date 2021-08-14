@@ -1,31 +1,40 @@
 #include "Game.hpp"
 #include <iostream>
 
-#define cout std::cout 
-#define endl std::endl
-#define cin std::cin
+using std::cout;
+using std::endl;
+using std::cin;
+using std::string;
 
 Game::Game()
 {
-	cout<<"game started"<<endl;
+	eng.OtladFName(0,"CONSOLE FIGHTING");
 	eng.Users_Load();
-	eng.Users_Select(1);
+	MainMenu();
 }
 
 void Game::MainMenu()
 {
-	cout<<"------Main Menu-----"<<endl;
+	eng.OtladFName(0,"MainMenu");
 	cout<<"0: Contunie"<<endl;
 	cout<<"1: New game"<<endl;
 	
-	int usercin;
-	cin>>usercin;
-	eng.Users_Select(usercin);
+	cout<<">>";
+	string userCin;
+	cin>>userCin;
+	int userV=eng.CinValid(userCin,0,1);
+	if(userV==-1)
+	{
+		eng.ClearConsole();
+		MainMenu();
+	}
+	eng.Users_Select(userV);
+	eng.OtladFName(1,"MainMenu");
 }
 
 Game::~Game()
 {
 	eng.Users_Save();
 	eng.DeleteActors();
-	cout<<endl<<"game finished"<<endl;
+	eng.OtladFName(1,"CONSOLE FIGHTING");
 }

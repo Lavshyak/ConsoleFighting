@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -std=c++14 -fallow-void-main
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src 
+CXX_INCLUDES = -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/include -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/vendor -I/storage/BBFE-1AE6/termux/github/ConsoleFighting/src 
 
