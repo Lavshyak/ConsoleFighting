@@ -1,4 +1,4 @@
-# Install script for directory: /storage/BBFE-1AE6/termux/github/ConsoleFighting
+# Install script for directory: /storage/BBFE-1AE6/termux/cs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/storage/BBFE-1AE6/termux/github/ConsoleFighting/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/storage/BBFE-1AE6/termux/cs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
