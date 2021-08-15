@@ -10,14 +10,12 @@ class Actor
 	Actor(std::string name, double health=100,
 double damage=10, double defence=0, int lvl=0, double lvlCurrent=0);
 	
-	std::string ToSave();
 	
-	std::string GetName();
 	
 	int Attack(Actor &kogo); //этот перс вызывает Defence() у того, кого атакует.
 	int Defence(double damage); //этот перс получает урон. возвращает: 0-умер, 1-еще живой
 	
-	private:
+	private: 
 	void LvlUp(); 
 	
 	std::string m_name;
@@ -25,5 +23,11 @@ double damage=10, double defence=0, int lvl=0, double lvlCurrent=0);
 	int m_lvl; 
 	double m_lvlCurrent, //текущие очки опыта
 	m_lvlNeed; //сколько их надо, чтобы уровень увеличился
+	
+	//геттеры
+	public:
+	std::string ToSave();
+	std::string getname() {return m_name;}
+	int getlvl() {return m_lvl;}
 };
 #endif  //ACTOR_H

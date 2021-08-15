@@ -11,21 +11,23 @@
 class Engine
 {
 	public:
-	void DeleteActors(); //удаляет Акторов из памяти (если они будут объявлены в этом файле). Вызывается через Game.
-	
+	//Engine_Console.cpp
 	void ClearConsole(); //очищает консоль и пользовательский ввод
-	
 	int CinValid(std::string userCin, int l, int r); //-1 ошибка, >=0 правильно, для внешнего использования.
+	void OtladFName(int n, std::string name);
 	
+	//Engine_UsersBasic.cpp
+	void DeleteActors(); //удаляет Акторов из памяти (если они будут объявлены в этом файле). Вызывается через Game.
 	void Users_Select(int norl); //будет 3 пользователя, тут юзер выбирает нужного (User)
 	void Users_Save(); //сохранить всех персонажей игрока
 	void Users_Load(); //загрузить их
 	void Create_User(); //определяет (создает) нового пользователя
-	void Create_Enemy(); //определяет (создает) врага, подходящего для текущего состояния юзерского персонажа
 	
+	//Engine.cpp
+	void Create_Enemy(); //определяет (создает) врага, подходящего для текущего состояния юзерского персонажа
 	int Attack(); //кто атакует и какой результат.
 	
-	void OtladFName(int n, std::string name);
+	
 	
 	private:
 	Actor **User, //выбранный игроком перс
