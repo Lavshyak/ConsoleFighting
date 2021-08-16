@@ -26,7 +26,9 @@ class Engine
 	//Engine.cpp
 	void Create_Enemy(); //определяет (создает) врага, подходящего для текущего состояния юзерского персонажа
 	int Attack(); //кто атакует и какой результат.
-	
+	void Move_User();
+	void Move_Enemy();
+	int Move_Result();
 	
 	
 	private:

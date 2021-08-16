@@ -8,6 +8,7 @@ using std::endl;
 using std::cin;
 using std::string;
 
+
 void Engine::DeleteActors() ////////////////////
 {
 	OtladFName(0,"DeleteActors");
@@ -105,7 +106,7 @@ void Engine::Users_Select(int norl) ////////////
 
 	if (norl == 0) //на загрузку
 	{
-		if (!User)
+		if (!*User)
 		{
 			cout << "Персонаж не создан." << endl;
 			Create_User();
