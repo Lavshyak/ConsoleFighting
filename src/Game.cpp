@@ -18,17 +18,21 @@ void Game::MainMenu()
 	eng.OtladFName(0,"MainMenu");
 	cout<<"0: Contunie"<<endl;
 	cout<<"1: New game"<<endl;
-	
+	cout<<"2: Exit"<<endl;
 	cout<<">>";
 	string userCin;
 	cin>>userCin;
-	int userV=eng.CinValid(userCin,0,1);
+	cout<<"n1";
+	int userV=eng.CinValid(userCin,0,2);
+	cout<<"n2";
 	if(userV==-1)
 	{
 		eng.ClearConsole();
 		MainMenu();
 	}
-	eng.Users_Select(userV);
+	if(userV==0 | userV==1)
+		eng.Users_Select(userV);
+		Fight();
 	eng.OtladFName(1,"MainMenu");
 }
 
