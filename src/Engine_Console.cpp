@@ -15,6 +15,7 @@ void Engine::ClearConsole()
 
 void Engine::OtladFName(int n, string name)
 {
+	if(m_otladka==false) return;
 	if(n==0)
 	cout<<"______________________________"<<name<<"{"<<endl;
 	if(n==1)
@@ -31,7 +32,7 @@ int Engine:: CinValid(string userCin, int l, int r)
 	{
 		return -1;
 	}
-	if(ret<l | ret>r) return -1;
+	if(ret<l || ret>r) return -1;
 	return ret;
 }
 
@@ -47,5 +48,5 @@ void Engine::CinValid(int l, int r)
 		userInt=tl::nullopt;
 		return;
 	}
-	if(userInt<l | userInt>r) userInt=tl::nullopt;
+	if(userInt<l || userInt>r) userInt=tl::nullopt;
 }

@@ -30,17 +30,13 @@ void Engine::Users_Save() ////////////////////
 
 	for (int i = 0; i < 3; i++)
 	{
-		if (Users[i])
-		{
-			
 			out.open(("users/user" + std::to_string(i) + ".txt").c_str());
-			if (out.is_open())
+			if (out.is_open() && Users[i])
 			{
 				out << Users[i]->ToSave();
 				cout<<"сохранен юзер: "<<i<<endl;
 			}
 			out.close();
-		}	
 	}
 	OtladFName(1,"Users_Save");
 }

@@ -13,6 +13,8 @@ void Game::Fight()
 	int result=1;
 	while(result==1)
 	{
+		eng.ClearConsole();
+		eng.PrintStat();
 		eng.Move_User();
 		eng.Move_Enemy();
 		result = eng.Move_Result();
@@ -20,6 +22,6 @@ void Game::Fight()
 	if(result==2)
 	{
 		cout<<"Все)) XDXDXD"<<endl;
-		MainMenu();
 	}
+	MainMenu();
 }

@@ -22,17 +22,17 @@ void Game::MainMenu()
 	cout<<">>";
 	string userCin;
 	cin>>userCin;
-	cout<<"n1";
 	int userV=eng.CinValid(userCin,0,2);
-	cout<<"n2";
 	if(userV==-1)
 	{
 		eng.ClearConsole();
 		MainMenu();
 	}
-	if(userV==0 | userV==1)
+	if(userV==0 || userV==1)
+	{
 		eng.Users_Select(userV);
 		Fight();
+	}
 	eng.OtladFName(1,"MainMenu");
 }
 

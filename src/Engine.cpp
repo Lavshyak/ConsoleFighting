@@ -36,10 +36,6 @@ void Engine::Move_Enemy()
 int Engine::Move_Result()
 {
 	OtladFName(0,"Move_Result");
-	
-	cout<<(*User)->getname()<<": "<<(*User)->gethealth()<<" HP"<<endl;
-	cout<<Enemy->getname()<<": "<<Enemy->gethealth()<<" HP"<<endl;
-	
 	int re, ru, reu;
 	re = (*User)->SendState(*Enemy);
 	ru = Enemy->SendState(**User);
@@ -52,7 +48,13 @@ int Engine::Move_Result()
 	else if(re==0 & ru==1) reu=3;
 	else reu=2;
 	
-	if(reu==2) delete (*User);
+	if(reu==2) (*User)=nullptr;
 	OtladFName(1,"Move_Result");
 	return reu; 
+}
+
+void Engine::PrintStat()
+{
+		cout<<(*User)->getname()<<": "<<(*User)->gethealth()<<" HP"<<endl;
+	cout<<Enemy->getname()<<": "<<Enemy->gethealth()<<" HP"<<endl;
 }

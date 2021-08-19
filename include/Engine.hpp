@@ -25,10 +25,11 @@ class Engine
 	
 	//Engine.cpp
 	void Create_Enemy(); //определяет (создает) врага, подходящего для текущего состояния юзерского персонажа
-	int Attack(); //кто атакует и какой результат.
-	void Move_User();
-	void Move_Enemy();
-	int Move_Result();
+	int Attack(); //кто атакует и какой результат, умер ли тот, кого атаковали
+	void Move_User(); //выбор состояния юзерского перса
+	void Move_Enemy(); //врага
+	int Move_Result(); //кому какой урон и умер ли кто-то
+	void PrintStat(); //хп вывести
 	
 	
 	private:
@@ -40,6 +41,8 @@ class Engine
 	
 	std::string userStr; //что юзер ввел
 	tl::optional<int> userInt; //в это конвертится. -1 в случае неверного ввода
+	
+	bool m_otladka=false; //для OtladFName
 };
 
 #endif //ENGINE_H
