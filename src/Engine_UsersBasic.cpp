@@ -17,7 +17,7 @@ void Engine::DeleteActors() ////////////////////
 		delete Users[i];
 		cout<<"вычещен юзер: "<<i<<endl;
 	}
-	User=nullptr;
+	*User=nullptr;
 	delete Enemy;
 	cout<<"вычещен enemy"<<endl;
 	OtladFName(1,"DeleteActors");
@@ -31,10 +31,14 @@ void Engine::Users_Save() ////////////////////
 	for (int i = 0; i < 3; i++)
 	{
 			out.open(("users/user" + std::to_string(i) + ".txt").c_str());
-			if (out.is_open() && Users[i])
+			if (out.is_open())
 			{
+				if(Users[i])
+				{
 				out << Users[i]->ToSave();
 				cout<<"сохранен юзер: "<<i<<endl;
+				}
+				else out<<"";
 			}
 			out.close();
 	}
@@ -47,8 +51,8 @@ void Engine::Users_Load() ////////////////////
 	
 	std::ifstream in;
 
-	string name = "";
-	double health, damage, defence;
+	string name;
+	double maxHealth, health, damage, defence;
 	int lvl;
 	double lvlCurrent;
 
@@ -57,14 +61,17 @@ void Engine::Users_Load() ////////////////////
 		in.open(("users/user" + std::to_string(i) + ".txt").c_str());
 		if (in.is_open())
 		{
-			in >> name;
+			name="";
+			getline(in, name);
 			if (name == "")
-				break;
+			{
+				in.close();
+				continue;
+			}
 
-			in >> health >> damage >> defence >> lvl >> lvlCurrent;
+			in >> maxHealth >> health >> damage >> defence >> lvl >> lvlCurrent;
 
-			Users[i] = new Actor(name, health,
-								 damage, defence, lvl, lvlCurrent);
+			Users[i] = new Actor(name, maxHealth, health, damage, defence, lvl, lvlCurrent);
 		}
 		in.close();
 	}
@@ -80,7 +87,7 @@ void Engine::Users_Select(int norl) ////////////
 		cout << i << ": ";
 		if (Users[i])
 		{
-			cout << Users[i]->getname();
+			cout << Users[i]->getstatus();
 		}
 		else
 			cout << "Empty";

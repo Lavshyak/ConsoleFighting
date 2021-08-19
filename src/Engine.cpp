@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Actor.hpp"
 #include <fstream>
+#include <cstdlib>
 
 using std::cout;
 using std::endl;
@@ -11,7 +12,7 @@ using std::string;
 void Engine::Create_Enemy()
 {
 	int lvl = (*User)->getlvl();
-	Enemy = new Actor("Ork", 50+lvl*5, 5+lvl*5, lvl*5, lvl);
+	Enemy = new Actor("Ork", 50+lvl*5, 50+lvl*5, 5+lvl*3, lvl*2, lvl);
 }
 
 void Engine::Move_User()
@@ -29,7 +30,8 @@ void Engine::Move_User()
 void Engine::Move_Enemy()
 {
 	OtladFName(0,"Move_Enemy");
-	Enemy->setstate(1);
+	srand(Enemy->gethealth());
+	Enemy->setstate(1+rand()%3);
 	OtladFName(1,"Move_Enemy");
 }
 
@@ -39,6 +41,9 @@ int Engine::Move_Result()
 	int re, ru, reu;
 	re = (*User)->SendState(*Enemy);
 	ru = Enemy->SendState(**User);
+	
+	cout<<(*User)->GetState()<<endl;
+	cout<<Enemy->GetState()<<endl;
 	
 	if(re==0) cout<<Enemy->getname()<<": Помираю..."<<endl;
 	if(ru==0) cout<<(*User)->getname()<<": Помираю..."<<endl;
@@ -55,6 +60,6 @@ int Engine::Move_Result()
 
 void Engine::PrintStat()
 {
-		cout<<(*User)->getname()<<": "<<(*User)->gethealth()<<" HP"<<endl;
-	cout<<Enemy->getname()<<": "<<Enemy->gethealth()<<" HP"<<endl;
+	cout<<(*User)->getstatus()<<endl;
+	cout<<Enemy->getstatus()<<endl;
 }
